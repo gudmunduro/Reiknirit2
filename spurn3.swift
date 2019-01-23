@@ -8,9 +8,11 @@ func summa(n: Int) -> Int {
     }
 }
 
-print("Tala: ", terminator: "")
-guard let tala = Int(readLine()!) else {
-    print("Tala er ekki leyfileg")
-    abort()
+func runPart3()
+{
+    guard let tala: Int = input(message: "Tala: ") else {
+        print("Tala er ekki leyfileg")
+        return
+    }
+    print(summa(n: tala))
 }
-print(summa(n: tala))
