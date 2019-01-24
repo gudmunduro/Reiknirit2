@@ -1,6 +1,7 @@
 import Foundation
 
-func summa(n: Int) -> Int {
+func summa(n: Int) -> Int 
+{
     if n == 1 {
         return 1 
     } else {

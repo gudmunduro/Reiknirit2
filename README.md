@@ -23,4 +23,4 @@ func convertToBinary ( n ) {
 }
 ```
 
-3. 
+Spuringar 3, 4, 5 og 6 eru allar í spurn3.swift, spurn4.swift... fileunum og compileaðar í forrit (linux) og forrit.exe(windows)
