@@ -10,7 +10,7 @@ func summa(n: Int) -> Int {
 
 func runPart3()
 {
-    guard let tala: Int = input(message: "Tala: ") else {
+    guard let tala: Int = input("Tala: ") else {
         print("Tala er ekki leyfileg")
         return
     }
