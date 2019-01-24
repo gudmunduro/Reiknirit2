@@ -1,13 +1,13 @@
 
 // Functions
 
-func input(_ message: String = "") -> String?
+public func input(_ message: String = "") -> String?
 {
     print(message, terminator: ": ")
     return readLine()
 }
 
-func input(_ message: String = "") -> Int?
+public func input(_ message: String = "") -> Int?
 {
     print(message, terminator: ": ")
     let inp = readLine()
@@ -17,9 +17,9 @@ func input(_ message: String = "") -> Int?
 
 // Classes
 
-class Menu {
+public class Menu {
     let title: String
-    internal fileprivate(set) var options: [(text: String, option: () -> Void)]
+    public fileprivate(set) var options: [(text: String, option: () -> Void)]
 
     init(title: String, options: [(text: String, option: () -> Void)])
     {
@@ -43,6 +43,7 @@ class Menu {
                 print("Invalid selection")
                 continue
             }
+
             print("--\(options[selected - 1].text)--")
             print("")
             do {
